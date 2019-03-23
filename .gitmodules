@@ -1,0 +1,12 @@
+[submodule "protos-modeldb"]
+	path = protos-modeldb
+	url = https://github.com/VertaAI/protos-modeldb
+[submodule "protos-modeldb-go"]
+	path = protos-modeldb-go
+	url = https://github.com/VertaAI/protos-modeldb-go
+[submodule "protos-modeldb-python"]
+	path = protos-modeldb-python
+	url = https://github.com/VertaAI/protos-modeldb-python
+[submodule "modeldb-backend-proxy"]
+	path = modeldb-backend-proxy
+	url = https://github.com/VertaAI/modeldb-backend-proxy
