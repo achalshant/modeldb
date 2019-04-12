@@ -4,7 +4,7 @@ metadata:
   labels:
     app: modeldb
   name: modeldb-artifact-store
-  namespace: default
+  namespace: {{ .Values.namespace }}
 spec:
   selector:
     matchLabels:
@@ -22,7 +22,7 @@ spec:
       - env:
         - name: VERTA_ARTIFACT_CONFIG
           value: /config/config.yaml
-        image: vertaaiofficial/modeldb-artifact-store:kubeflow
+        image: {{ .Values.image.artifactStoreImage }}
         imagePullPolicy: Always
         name: modeldb-artifact-store
         ports:

@@ -4,7 +4,7 @@ metadata:
   labels:
     app: modeldb
   name: modeldb-backend
-  namespace: default
+  namespace: {{ .Values.namespace }}
 spec:
   selector:
     matchLabels:
@@ -22,7 +22,7 @@ spec:
       - env:
         - name: VERTA_MODELDB_CONFIG
           value: /config-backend/config.yaml
-        image: vertaaiofficial/modeldb-backend:kubeflow
+        image: {{ .Values.image.modeldbBackendImage }}
         imagePullPolicy: Always
         name: modeldb-backend
         ports:

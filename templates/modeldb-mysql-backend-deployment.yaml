@@ -4,7 +4,7 @@ metadata:
   labels:
     app: modeldb
   name: modeldb-mysql-backend
-  namespace: default
+  namespace: {{ .Values.namespace }}
 spec:
   selector:
     matchLabels:
@@ -24,7 +24,7 @@ spec:
         env:
         - name: MYSQL_ROOT_PASSWORD
           value: root
-        image: mysql:5.7
+        image: {{ .Values.image.modeldbDatabaseImage }}
         imagePullPolicy: Always
         name: modeldb-mysql-backend
         ports:

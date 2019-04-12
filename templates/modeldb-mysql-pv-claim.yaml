@@ -4,10 +4,10 @@ metadata:
   labels:
     app: modeldb
   name: modeldb-mysql-pv-claim
-  namespace: default
+  namespace: {{ .Values.namespace }}
 spec:
   accessModes:
   - ReadWriteOnce
   resources:
     requests:
-      storage: 20Gi
+      storage: {{ .Values.modeldbMysqlPvcSize }}
