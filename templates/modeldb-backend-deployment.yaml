@@ -22,7 +22,7 @@ spec:
       - env:
         - name: VERTA_MODELDB_CONFIG
           value: /config-backend/config.yaml
-        image: acshanth/modeldb-backend:v3
+        image: vertaaiofficial/modeldb-backend:kubeflow
         imagePullPolicy: Always
         name: modeldb-backend
         ports:
