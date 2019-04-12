@@ -4,7 +4,7 @@ metadata:
   labels:
     app: modeldb
   name: modeldb-artifact-store
-  namespace: kubeflow
+  namespace: default
 spec:
   selector:
     matchLabels:

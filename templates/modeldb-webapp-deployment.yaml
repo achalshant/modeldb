@@ -4,7 +4,7 @@ metadata:
   labels:
     app: modeldb
   name: modeldb-webapp
-  namespace: kubeflow
+  namespace: default
 spec:
   selector:
     matchLabels:
