@@ -1,0 +1,15 @@
+name: modeldb
+namespace: default
+artifactConfig: 
+config: 
+modeldbMysqlPvcSize: 20Gi
+image:
+  artifactStoreImage: vertaaiofficial/modeldb-artifact-store:kubeflow
+  modeldbBackendProxyImage: vertaaiofficial/modeldb-backend-proxy:kubeflow
+  modeldbBackendImage: vertaaiofficial/modeldb-backend:kubeflow
+  modeldbDatabaseImage: mysql:5.7
+  modeldbWebappImage: vertaaiofficial/modeldb-frontend:kubeflow
+service:
+  modeldbBackendService: LoadBalancer
+  modeldbWebappService: LoadBalancer
+  mysqlDbService: true

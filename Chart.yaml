@@ -1,0 +1,9 @@
+name: modeldb
+description: ModelDB on Kubernetes
+version: 0.1.0
+home: https://github.com/VertaAI/modeldb
+sources: 
+  - https://github.com/VertaAI/modeldb
+maintainers:
+  - name: Achal Shantharam
+  - name: Aishwarya T
