@@ -13,7 +13,7 @@ git clone https://github.com/VertaAI/modeldb.git
 helm install modeldb
 ```
 
-### what next?
+### What next?
 
 Now that you have modelDB up and running on your K8s cluster, please visit [our user guide and documentation](https://verta.readthedocs.io/en/docs/index.html) to get started.
 
