@@ -4,11 +4,11 @@ metadata:
   labels:
     app: modeldb
   name: modeldb-backend
-  namespace: default
+  namespace: {{ .Values.namespace }}
 spec:
   ports:
   - port: 8085
   selector:
     app: modeldb
     tier: backend
-  type: LoadBalancer
+  type: {{ .Values.service.modeldbBackendService }}

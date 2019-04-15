@@ -4,7 +4,7 @@ metadata:
   labels:
     app: modeldb
   name: modeldb-backend-proxy
-  namespace: default
+  namespace: {{ .Values.namespace }}
 spec:
   selector:
     matchLabels:
@@ -28,7 +28,7 @@ spec:
         - modeldb-backend:8085
         command:
         - /go/bin/proxy
-        image: vertaaiofficial/modeldb-backend-proxy:kubeflow
+        image: {{ .Values.image.modeldbBackendProxyImage }}
         imagePullPolicy: Always
         name: modeldb-backend-proxy
         ports:

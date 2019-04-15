@@ -5,7 +5,7 @@ metadata:
   labels:
     app: modeldb
   name: modeldb-webapp
-  namespace: default
+  namespace: {{ .Values.namespace }}
 spec:
   ports:
   - port: 80
@@ -13,4 +13,4 @@ spec:
   selector:
     app: modeldb
     tier: webapp
-  type: LoadBalancer
+  type: {{ .Values.service.modeldbWebappService }}

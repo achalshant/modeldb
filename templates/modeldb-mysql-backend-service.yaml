@@ -3,7 +3,7 @@ kind: Service
 metadata:
   annotations:
   name: modeldb-mysql-backend
-  namespace: default
+  namespace: {{ .Values.namespace }}
 spec:
   ports:
   - port: 3306
