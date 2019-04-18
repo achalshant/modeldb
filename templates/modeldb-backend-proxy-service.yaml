@@ -4,6 +4,7 @@ metadata:
   labels:
     app: modeldb
   name: modeldb-backend-proxy
+  namespace: {{ .Values.namespace }}
 spec:
   ports:
   - port: 8080
