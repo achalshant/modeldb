@@ -12,7 +12,8 @@ ModelDB is an end-to-end system for managing machine learning models. It ingests
 
 ```
 git clone https://github.com/VertaAI/modeldb.git
-helm install modeldb --name <release-name> --namespace <k8s namespace>
+cd modeldb/
+helm install . --name <release-name> --namespace <k8s namespace>
 ```
 By default, the "default" namespace on your Kubernetes cluster is used.
 
