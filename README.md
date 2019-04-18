@@ -28,3 +28,4 @@ To build and deploy each of the services running as a part of modelDB, please fo
 To contribute to our project, look at the contributing section for each of the components - 
 * [modeldb-client](https://github.com/VertaAI/modeldb-client/blob/development/README.md)
 * [modeldb-backend](https://github.com/VertaAI/modeldb-backend/blob/master/README.md)
+* [modeldb-frontend](https://github.com/VertaAI/modeldb-frontend/blob/master/README.md)
