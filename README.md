@@ -1,10 +1,12 @@
 # ModelDB: A system to manage ML models
 
+ModelDB is an end-to-end system for managing machine learning models. It ingests models and associated metadata as models are being trained, stores model data in a structured format, and surfaces it through a web-frontend for rich querying.
+
 ### Prerequisites
 
-- Kubernetes version 1.8+
-- kubectl
-- Helm
+- [Kubernetes](https://kubernetes.io/docs/home/) version 1.8+
+- [kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl/)
+- [Helm](https://helm.sh/)
 
 ### Deploying ModelDB on Kubernetes
 
@@ -17,6 +19,13 @@ helm install modeldb
 
 Now that you have modelDB up and running on your K8s cluster, please visit [our user guide and documentation](https://verta.readthedocs.io/en/docs/index.html) to get started.
 
-### Contributing
+### Using Custom Images
 
 To build and deploy each of the services running as a part of modelDB, please follow the instructions in the corresponding service's repository to build the docker image for that service. Once the image is pushed to a container registry, update the corresponding property to point to the newly developed image in the [values.yaml](https://github.com/VertaAI/modeldb/values.yaml) file.
+
+### Contributing
+
+To contribute to our project, look at the contributing section for each of the components - 
+* [modeldb-client](https://github.com/VertaAI/modeldb-client/blob/development/README.md)
+* [modeldb-backend](https://github.com/VertaAI/modeldb-backend/blob/master/README.md)
+* [modeldb-frontend](https://github.com/VertaAI/modeldb-frontend/blob/master/README.md)
