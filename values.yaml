@@ -1,5 +1,4 @@
 name: modeldb
-namespace: default
 artifactConfig: 
 config: 
 modeldbMysqlPvcSize: 20Gi
